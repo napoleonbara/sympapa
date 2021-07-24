@@ -16,22 +16,19 @@ export default function Layout({children}) {
   .sort( (a, b) => a.text.localeCompare(b.text) );
 
   return (
-    <html>
-      <head>
-      </head>
-      <body>
-        <ul id="navigation-bar">
-          {links.map( (item) => 
-            <li key={item.href}>
-              <Link href={item.href}><a>{item.text}</a></Link>
-            </li>
-          )}
-        </ul>
-        <div>
-          {children}
-        </div>
-      </body>
-    </html>
+    <div>
+      <header>Sympapa, le symbaroum sympa de papa</header>
+      <ul id="navigation-bar">
+        {links.map( (item) => 
+          <li key={item.href}>
+            <Link href={item.href}><a>{item.text}</a></Link>
+          </li>
+        )}
+      </ul>
+      <div>
+        {children}
+      </div>
+    </div>
   )
 }
 

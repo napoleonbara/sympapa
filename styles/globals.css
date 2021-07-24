@@ -14,3 +14,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+header {
+  font-weight: bold;
+  font-size: 150%;
+}
