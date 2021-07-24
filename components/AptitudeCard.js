@@ -3,23 +3,23 @@ export default function AptitudeCard({aptitude}) {
 
   let formatedDescription = null;
   if(Array.isArray(aptitude.description)){
-    formatedDescription = <div class="description multiple">
+    formatedDescription = <div className="description multiple">
         <div>{aptitude.description[0]}</div>
         <div>{aptitude.description[1]}</div>
         <div>{aptitude.description[2]}</div>
         <div>{aptitude.description[3]}</div>
       </div>
   } else {
-    formatedDescription = <div class="description single">{aptitude.description}</div>
+    formatedDescription = <div className="description single">{aptitude.description}</div>
   }
 
   return (
-    <div key={aptitude.id} class="aptitude-card">
-      <div class="name">{aptitude.name}</div>
-      <div class="type">{aptitude.type}</div>
+    <div key={aptitude.id} className="aptitude-card">
+      <div className="name">{aptitude.name}</div>
+      <div className="type">{aptitude.type}</div>
       {formatedDescription}
-      <div class="reference">{aptitude.reference}</div>
-      <div  class="tags">{aptitude.tags.join(', ')}</div>
+      <div className="reference">{aptitude.reference}</div>
+      <div  className="tags">{aptitude.tags.join(', ')}</div>
     </div>
   )
 }
