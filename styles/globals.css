@@ -5,4 +5,56 @@
 header {
 	@apply font-bold;
 	@apply text-lg;
+	@apply mx-4;
+	@apply my-2;
+}
+
+.navigation-bar {
+	@apply flex;
+	@apply mx-4; 
+	@apply my-2;
+	@apply border-b-2;
+	@apply px-2;
+}
+
+.navigation-bar li{
+	@apply flex-initial;
+	@apply mr-4
+}
+
+.sorting-bar {
+	@apply text-base;
+	@apply text-center;
+}
+
+.aptitudes-list {
+	@apply mt-5;
+	@apply mx-4;
+}
+
+.aptitude-card {
+	@apply mt-2;
+}
+
+.aptitude-card .name{
+	@apply font-bold;
+	@apply capitalize;
+	@apply ml-2;
+}
+
+.aptitude-card .type{
+	@apply italic;
+}
+
+.aptitude-card .description{
+	text-indent: 1em;
+	@apply ml-1;	
+}
+
+.aptitude-card .description div{
+	@apply mt-1;
+}
+
+.aptitude-card .taglist .tag{
+	@apply mx-1;
 }

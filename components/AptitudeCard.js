@@ -19,7 +19,12 @@ export default function AptitudeCard({aptitude}) {
       <div className="type">{aptitude.type}</div>
       {formatedDescription}
       <div className="reference">{aptitude.reference}</div>
-      <div  className="tags">{aptitude.tags.join(', ')}</div>
+      <div  className="taglist">
+        <span>Tags: </span>
+        {aptitude.tags.map(e => 
+          <span className="tag" key={e}>{e}</span>
+        )}
+      </div>
     </div>
   )
 }

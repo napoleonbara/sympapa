@@ -17,7 +17,7 @@ export default function Layout({children}) {
   return (
     <div>
       <header>Sympapa, le symbaroum sympa de papa</header>
-      <ul id="navigation-bar">
+      <ul className="navigation-bar">
         {links.map( (item) => 
           <li key={item.href}>
             <Link href={item.href}><a>{item.text}</a></Link>

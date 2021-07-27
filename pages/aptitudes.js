@@ -25,25 +25,25 @@ export async function getServerSideProps({ query, req, res }) {
 export default function Aptitudes({aptitudes, query}) {
 
   const sortLinks = [
-    { query: {}, text: "Tout par ordre alphabetique"},
-    { query: {type:"atout"}, text: "Atouts seulement"},
-    { query: {type:"fardeau"}, text: "Fardeaux seulement"},
-    { query: {type:"pouvoir mystique"}, text: "Pouvoirs Mystiques  seulement"},
-    { query: {type:"talent"}, text: "Talents seulement"},
-    { query: {type:"trait"}, text: "Traits seulement"},
-    { query: {type:"trait monstrueux"}, text: "Traits Monstrueux seulement"}
+    { query: {}, text: "Tout"},
+    { query: {type:"atout"}, text: "Atouts"},
+    { query: {type:"fardeau"}, text: "Fardeaux"},
+    { query: {type:"pouvoir mystique"}, text: "Pouvoirs Mystiques"},
+    { query: {type:"talent"}, text: "Talents"},
+    { query: {type:"trait"}, text: "Traits"},
+    { query: {type:"trait monstrueux"}, text: "Traits Monstrueux"}
   ];
 
   return (
     <Layout>
-      <ul>
+      <ul className="navigation-bar sorting-bar">
         {sortLinks.map(({query, text}) => 
           <li key={text}>
             <Link href={{pathname: "/aptitudes", query: query}}><a>{text}</a></Link>
           </li>
         )}
       </ul>
-      <ul>
+      <ul className="aptitudes-list">
         {aptitudes.map((apt) => 
           <li key={apt.id}>
             <AptitudeCard aptitude={apt}/>
