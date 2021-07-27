@@ -17,7 +17,6 @@ export default function AptitudeCard({aptitude}) {
     <div key={aptitude.id} className="aptitude-card">
       <div className="name">{aptitude.name}</div>
       <div className="type">{aptitude.type}</div>
-      {formatedDescription}
       <div className="reference">{aptitude.reference}</div>
       <div  className="taglist">
         <span>Tags: </span>
@@ -25,6 +24,7 @@ export default function AptitudeCard({aptitude}) {
           <span className="tag" key={e}>{e}</span>
         )}
       </div>
+      {formatedDescription}
     </div>
   )
 }

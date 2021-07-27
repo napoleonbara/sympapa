@@ -17,7 +17,7 @@ header {
 	@apply px-2;
 }
 
-.navigation-bar li{
+.navigation-bar li {
 	@apply flex-initial;
 	@apply mr-4
 }
@@ -33,28 +33,81 @@ header {
 }
 
 .aptitude-card {
-	@apply mt-2;
+	@apply py-2;
+	@apply w-full;
+	@apply border-b-2;
 }
 
-.aptitude-card .name{
+.aptitude-card .name {
 	@apply font-bold;
 	@apply capitalize;
 	@apply ml-2;
+	display:  inline-block;
+	@apply text-lg;
 }
 
-.aptitude-card .type{
+.aptitude-card .type {
 	@apply italic;
+	@apply text-sm;
+	display:  inline-block;
+	@apply mx-2;
 }
 
-.aptitude-card .description{
+.aptitude-card .type::before {
+	content: "(";
+}
+
+.aptitude-card .type::after {
+	content: ")";
+}
+
+.aptitude-card .reference {
+	@apply italic;
+	@apply text-sm;
+	display:  inline-block;
+	@apply mx-2;
+}
+
+.aptitude-card .reference::before {
+	content: "(";
+}
+
+.aptitude-card .reference::after {
+	content: ")";
+}
+
+.aptitude-card .description {
 	text-indent: 1em;
-	@apply ml-1;	
+	@apply ml-1;
 }
 
-.aptitude-card .description div{
+.aptitude-card .description div {
 	@apply mt-1;
 }
 
-.aptitude-card .taglist .tag{
-	@apply mx-1;
+.aptitude-card .taglist {
+	@apply ml-2;
+}
+
+.aptitude-card .taglist :nth-child(1) {
+	@apply font-bold;
+}
+
+.aptitude-card .taglist .tag:nth-child(1n+3)::before {
+	content: ", ";
+}
+
+.aptitude-card .description :nth-child(2)::before {
+	content: "I : ";
+	@apply font-bold;
+}
+
+.aptitude-card .description :nth-child(3)::before {
+	content: "II : ";
+	@apply font-bold;
+}
+
+.aptitude-card .description :nth-child(4)::before {
+	content: "III : ";
+	@apply font-bold;
 }

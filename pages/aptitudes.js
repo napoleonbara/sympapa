@@ -8,12 +8,10 @@ import 'tailwindcss/tailwind.css'
 
 export async function getServerSideProps({ query, req, res }) {
   
-  console.log(query)
   const data = await fetch(`http://${req.headers.host}/api/aptitudes`);
   let aptitudes = await data.json();
 
   if(query.hasOwnProperty('type')){
-    console.log("pouet")
     aptitudes = aptitudes.filter(e => e.type === query.type);
   }
 
