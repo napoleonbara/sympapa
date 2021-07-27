@@ -2665,80 +2665,80 @@
         "name": "Arme dansante",
         "id": "pouvoir_mystique_arme_dansante",
         "description": [
-            "",
-            "",
-            "",
-            ""
+            "Matériel : Une arme de mêlée. Par sa seule force mentale, le Mystique peut faire s’élever une arme dans les airs et la faire combattre, aussi fulgurante qu’une pensée. L’arme en question ne doit pas nécessairement être spéciale ; si elle possède des Qualités ou des Pouvoirs, ils peuvent être utilisés par le Mystique selon les règles normales du combat. Cependant, le Mystique ne peut pas utiliser d’autres Talents en lien avec le combat lorsqu’il utilise ce Pouvoir.",
+            "Active. Le Mystique laisse danser son arme et utilise sa Volonté au lieu de sa Précision (Attaque) et son Agilité (Défense). Les autres règles normales de combat s’appliquent. Le Novice doit se concentrer sur l’arme pendant qu’il se bat, ce qui l’empêche d’utiliser d’autres Pouvoirs ou Talents tant que l’arme danse.",
+            "Active. Le Mystique doit prendre le contrôle de l’arme en dépensant une Action de combat afin d’activer le Pouvoir, mais l’arme se bat ensuite seule, tandis que le Mystique est libre d’utiliser d’autres Pouvoirs et Talents. Les tests d’Attaque et de Défense sont effectués sur la Volonté.",
+            "Gratuite. L’arme sort d’elle-même de son fourreau et se met à danser lorsque le Maître en a besoin. Elle attaque une fois par tour et défend le personnage d’elle-même tandis que le Mystique est libre d’utiliser d’autres Pouvoirs et Talents. Les tests d’Attaque et de Défense sont effectués sur la Volonté."
         ],
         "effect": null,
         "reference": "guide du joueur, p78",
         "type": "pouvoir mystique",
         "tags": [
-            "pouvoir mystique"
+            "pouvoir mystique", "chant des trolls", "magie au bâton"
         ]
     },
     {
         "name": "Assaut psychique",
         "id": "pouvoir_mystique_assaut_psychique",
         "description": [
-            "",
-            "",
-            "",
-            ""
+            "Matériel : Un éclat de verre aussi acéré que la lame d’un couteau. Certains Mystiques savent transformer leur force mentale en une arme capable d’attaquer l’ennemi en complément des attaques de mêlée habituelles du Mystique. Cela signifie que l’ennemi doit se défendre sur deux fronts et risquer d’échouer sur les deux. Il y a également une chance pour que l’ennemi soit paralysé ou sévèrement blessé par l’assaut psychique.",
+            "Réactive. Le Mystique effectue une attaque normale au corps-à-corps en combinaison avec un assaut mental qui cible la capacité défensive de l’ennemi. Le personnage bénéficie d’une deuxième chance de réussir son test d’Attaque.",
+            "Réactive. L’assaut psychique est lancé en combinaison avec l’attaque au corps-à-corps et, si le Mystique réussit un test de [Volonté ←Volonté], l’ennemi est incapable de se défendre contre l’attaque. Ainsi, si le test est réussi, le Mystique touche automatiquement l’ennemi.",
+            "Réactive. En réussissant un test de [Volonté ←Volonté], l’ennemi est incapable de se défendre et l’attaque au corps-à-corps touche automatiquement. De plus, l’ennemi subit 1D4 points de dégâts supplémentaires, ignorant l’Armure, en plus des dégâts infligés par l’attaque au corps-à-corps."
         ],
         "effect": null,
         "reference": "guide du joueur, p80",
         "type": "pouvoir mystique",
         "tags": [
-            "pouvoir mystique"
+            "pouvoir mystique", "mentalistes uniquement"
         ]
     },
     {
         "name": "Brèche",
         "id": "pouvoir_mystique_breche",
         "description": [
-            "",
-            "",
-            "",
-            ""
+            "Matériel : Une arme tranchante afin d’entailler l’étoffe de la réalité. Le manque de respect des Conjureurs pour les lois de la nature leur octroie l’incroyable pouvoir de fissurer et de courber d’apparentes constantes telles que le temps et l’espace. L’une des façons d’utiliser ce Pouvoir est de bannir temporairement des créatures du monde des vivants en les envoyant vers l’Au-delà, où hurlent les vents improbables accompagnant les abominations qui rôdent. Ceci représente également un danger pour le Démonologue, car chaque tentative ratée d’utiliser ce Pouvoir risque de faire pénétrer une abomination dans le monde. Si cela se produit, l’abomination attaque une victime au hasard, excepté les personnes protégées par une Aura impie ou celles dont l’âme est déjà profondément corrompue.\nL’abomination qui arrive a autant de chance (1D6) d’être (1 - 2) un Démon vengeur, (3 – 4) un Démon savant, ou (5 – 6) un Démon gardien (se référer au rituel Invocation de démon en page 91 pour les statistiques).",
+            "Active. En réussissant un test de [Volonté ←Volonté], le personnage ouvre une brèche temporaire dans la structure de la réalité et y envoie un ennemi. L’ennemi revient un tour plus tard, à l’Initiative du personnage et au même endroit – encore embué par les brumes de l’Au-delà, en subissant 1D4 points de dégâts (ignorant l’Armure) et 1D4 points de Corruption temporaire.\nUne tentative ratée attire automatiquement une abomination, qui pénètre par la brèche.",
+            "Active. En réussissant un test de [Volonté ← Volonté], le personnage envoie un ennemi plus loin dans l’Au-delà et ce dernier doit se battre pour en repartir ; à chaque tour, l’ennemi peut effectuer un test de Volonté, un succès lui permet de revenir dans le monde. Chaque tour passé dans l’Au-delà lui inflige 1D4 points de dégâts (ignorant l’Armure) et 1D4 points de Corruption temporaire. Si la cible meurt ou devient intégralement corrompue, la brèche se referme et l’ennemi disparaît à jamais.\nLa brèche restant ouverte aussi longtemps que l’ennemi reste banni, il y a un risque qu’une abomination furibonde s’y faufile – à chaque tour après le premier, le Mystique doit réussir un test de Volonté afin d’empêcher une abomination de s’infiltrer par la brèche.\nSi le test initial pour l’utilisation du pouvoir échoue, le Mystique doit immédiatement effectuer un test de Volonté afin de stopper une abomination enragée de pénétrer dans le monde.\n Le Mystique peut choisir de ne pas tenter d’empêcher l’arrivée de l’abomination, peu importe que l’abomination arrive suite à une tentative ratée d’utiliser le pouvoir ou en conséquence d’une brèche restée ouverte pendant une trop longue durée.",
+            "Réactive. Une fois par tour, l’ennemi qui attaque le Mystique au corps-à-corps risque d’être envoyé dans l’Au-delà, si le Mystique réussit un test de [Volonté ←Volonté]. S’il y est envoyé, il subit les mêmes effets qu’au niveau Novice. Un test raté n’a pas d’effet; il n’y a pas de risque de faire entrer une abomination dans le monde."
         ],
         "effect": null,
         "reference": "guide du joueur, p80",
         "type": "pouvoir mystique",
         "tags": [
-            "pouvoir mystique"
+            "pouvoir mystique", "conjuration"
         ]
     },
     {
         "name": "Eclair noir",
         "id": "pouvoir_mystique_eclair_noir",
         "description": [
-            "",
-            "",
-            "",
-            ""
+            "Matériel : Un éclat de verre volcanique. Lors de la Grande Guerre, les éclairs noirs des Sombres Seigneurs qui prenaient au piège et consumaient leurs cibles étaient craints de tous. Plus récemment, d’autres conjureurs ont découvert qu’ils pouvaient faire de même en projetant leurs âmes souillées et en les utilisant comme des fouets qui agrippent et rongent leurs ennemis.\nLe Mystique ne peut lancer un nouvel éclair noir tant qu’au moins un ennemi est pris au piège par ce Pouvoir, mais il est libre d’utiliser d’autres Pouvoirs mystiques.",
+            "Active. En réussissant un test de [Volonté ←Agilité], le personnage lance un éclair noir vers un ennemi. S’il réussit, la cible est touchée et subit 1D6 points de dégâts, ignorant l’Armure. De plus, la cible est prise au piège et ne peut pas agir tant qu’elle n’est pas parvenue à se libérer. Cela requiert la réussite d’un test de Volonté (un jet est effectué à chaque tour après le premier) ou que le Mystique perde sa concentration en échouant à un test de [Volonté ← Dégâts].",
+            "Active. Le personnage lance un enchaînement d’éclairs noirs. Le fonctionnement est similaire au niveau Novice, mais à chaque fois qu’une cible est touchée par l’éclair, un autre ennemi peut être attaqué, jusqu’à l’échec d’un test de réussite. Tous les ennemis affectés peuvent tenter de se libérer de l’effet du pouvoir et si l’un d’eux y parvient, tous les autres sont alors immédiatement libres d’agir. La même chose se produit si le Mystique perd sa concentration en échouant à un test de [Volonté ← Dégâts].",
+            "Active. Le personnage lance un enchaînement d’éclairs noirs, exactement comme au niveau Adepte, mais les cibles prises au piège doivent se libérer individuellement ; ils ne peuvent pas s’aider mutuellement comme au niveau Adepte. Si le Mystique perd sa concentration en échouant à un test de [Volonté ← Dégâts], toutes les cibles sont immédiatement libérées des ténèbres qui les emprisonnaient"
         ],
         "effect": null,
         "reference": "guide du joueur, p80",
         "type": "pouvoir mystique",
         "tags": [
-            "pouvoir mystique"
+            "pouvoir mystique", "conjuration"
         ]
     },
     {
         "name": "Esprit tourmenteur",
         "id": "pouvoir_mystique_esprit_tourmenteur",
         "description": [
-            "",
-            "",
-            "",
-            ""
+            "Matériel : Un lambeau de linceul. Le monde est ancien et de nombreux esprits des jours passés s’y attardent ; des esprits de la nature dans l’eau et la terre, ou des héros disparus attendant encore de passer de l’autre côté. Certains Mystiques peuvent ramener ces esprits à la vie et les envoyer attaquer leurs ennemis. Ceux-ci sont alors assaillis par ces esprits furibonds qui déchirent leurs vêtements, leur équipement, leur chevelure et leur chair. Dans le meilleur des cas, la cible ne peut pas réagir ; dans le pire des cas, la cible sombre dans la folie, voire meurt suite à de telles attaques. ",
+            "Active. Le Mystique appelle les esprits à l’aide, et ces formes translucides attaquent l’un de ses ennemis. La cible rate automatiquement tous ses tests de concentration lorsqu’elle utilise des Pouvoirs mystiques ; tous ses autres tests ont une deuxième chance d’échouer. Le Mystique doit réussir un test de Volonté à chaque tour afin que les esprits continuent à attaquer.",
+            "Active. Le Mystique peut demander une aide plus conséquente aux esprits. Ils attaquent avec violence et infligent des dégâts à la Volonté de la cible, venant s’ajouter à l’effet décrit au niveau Novice. Les dégâts infligés sont de 1D4 par tour, ignorant l’Armure. Si la Volonté descend à zéro, la cible meurt si elle ne peut pas passer de Test de mort (comme le font les personnages). Ces derniers deviennent, eux, temporairement déments – catatonie, pleurs incontrôlés ou tout autre état les empêchant d’agir – pendant qu’ils passent leurs Tests de mort. Les dégâts alternatifs se soignent comme les autres dégâts. Le Mystique doit réussir un test de Volonté à chaque tour afin que les esprits continuent leurs attaques. De plus, si le Mystique subit des dégâts, sa concentration sera interrompue s’il rate un test de [Volonté ← Dégâts].",
+            "Active. L’attaque des esprits inflige 1D6 points de dégâts à la Volonté."
         ],
         "effect": null,
         "reference": "guide du joueur, p81",
         "type": "pouvoir mystique",
         "tags": [
-            "pouvoir mystique"
+            "pouvoir mystique", "spirites uniquement"
         ]
     },
     {
