@@ -27,6 +27,10 @@ header {
 	@apply text-center;
 }
 
+.tag-bar {
+	@apply flex-wrap;
+}
+
 .aptitudes-list {
 	@apply mt-5;
 	@apply mx-4;

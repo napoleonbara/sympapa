@@ -15,12 +15,26 @@ export async function getServerSideProps({ query, req, res }) {
     aptitudes = aptitudes.filter(e => e.type === query.type);
   }
 
+  const tags = aptitudes.reduce((acc, cur) => {
+    const tags = cur.tags;
+    tags.forEach((tag) => {
+      if(!acc.includes(tag)){
+        acc.push(tag);
+      }
+    });
+    return acc;
+  }, []).sort( (a, b) => a.localeCompare(b) );
+
+  if(query.hasOwnProperty('tag')){
+    aptitudes = aptitudes.filter(e => e.tags.includes(query.tag));
+  }
+
   aptitudes = aptitudes.sort( (a, b) => a.name.localeCompare(b.name) );
 
-  return { props: { aptitudes } }
+  return { props: { aptitudes, tags } }
 }
 
-export default function Aptitudes({aptitudes, query}) {
+export default function Aptitudes({aptitudes, tags, query}) {
 
   const sortLinks = [
     { query: {}, text: "Tout"},
@@ -41,6 +55,13 @@ export default function Aptitudes({aptitudes, query}) {
           </li>
         )}
       </ul>
+      <ul className="navigation-bar tag-bar">
+        {tags.map((text) => 
+          <li key={text}>
+            <Link href={{pathname: "/aptitudes", query: {tag:text}}}><a>{text}</a></Link>
+          </li>
+        )}
+      </ul>      
       <ul className="aptitudes-list">
         {aptitudes.map((apt) => 
           <li key={apt.id}>
