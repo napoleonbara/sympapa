@@ -1604,7 +1604,7 @@
     {
         "name": "Augure",
         "id": "atout_augure",
-        "description": "",
+        "description": "Le personnage a toujours vu des signes que les autres ont ratés et bénéficie d’un bonus de +1 aux tests de Rituels liés au destin ou à des informations dissimulées : Divination, Fumée révélatrice et Oracle.\nAugure peut être acquis à plusieurs reprises, jusqu’à un bonus de +3 pour les tests concernés.",
         "effect": null,
         "reference": "guide du joueur, p52",
         "type": "atout",
@@ -2764,48 +2764,48 @@
         "name": "Foulée éthérée",
         "id": "pouvoir_mystique_foulee_etheree",
         "description": [
-            "",
-            "",
-            "",
-            ""
+            "Matériel : Un lambeau de linceul. Grâce à sa relation intime avec la mort, le Mystique a développé un talent mystique lui permettant de prendre la forme immatérielle d’un esprit. Le Pouvoir Foulée éthérée est bloqué par les Rituels Cercle de Magie, Cercle de Sorcières et Rite de sanctification ; le Mystique ne peut pas traverser ou quitter de telles zones lorsqu’il a la forme d’un esprit ; il lui est néanmoins possible de prendre la forme d’un esprit alors qu’il se trouve dans une zone ainsi protégée. En outre, la Foulée éthérée s’achève si quelqu’un allume une Bougie fantomatique à proximité (voir l’élixir alchimique du même nom dans le Livre de base, page 157).",
+            "Tour entier. En réussissant un test de Volonté, le Mystique prend la forme d’un esprit. Cette forme immatérielle dure une Action de mouvement (environ 10 mètres), lui permettant de se déplacer à travers les murs les plus épais ou, par ailleurs, à travers les ennemis sur un champ de bataille. Toutes les attaques dirigées contre le Mystique n’étant pas effectuées à l’aide de pouvoirs ou d’artéfacts mystiques sont ignorées, et ces dernières n’infligent que la moitié de leurs dégâts habituels. Le personnage peut uniquement se déplacer pendant le tour et, après s’être déplacé, il reprend sa forme matérielle.",
+            "Tour entier. En réussissant un test de Volonté, le Mystique prend la forme d’un esprit. Cette forme immatérielle dure une Action de mouvement (environ 10 mètres), lui permettant de se déplacer à travers les murs les plus épais ou, par ailleurs, à travers les ennemis sur un champ de bataille. Toutes les attaques dirigées contre le Mystique n’étant pas effectuées à l’aide de pouvoirs ou d’artéfacts mystiques sont ignorées, et ces dernières n’infligent que la moitié de leurs dégâts habituels. Le personnage peut uniquement se déplacer pendant le tour et, après s’être déplacé, il reprend sa forme matérielle.\ncorps sans lui infliger de dégâts. Les exceptions sont les Pouvoirs et artéfacts mystiques – qui infligent la moitié de leurs dégâts même si le test est réussi. Le Mystique reprend immédiatement sa forme matérielle.\nLe Mystique peut choisir d’effectuer un test de Défense habituel s’il préfère, autrement dit, ne pas utiliser Foulée éthérée pour éviter une attaque spécifique.",
+            "Réactive. En réussissant un test de Volonté, le Mystique peut laisser une attaque — provenant d’une arme ou d’un Pouvoir mystique infligeant des dégâts — commencer sous forme éthérée, puis se transcender sous forme matérielle une fois que l’armure de l’ennemi a été pénétrée ; dans ce cas, l’Armure de la cible est ignorée par les attaques du Mystique."
         ],
         "effect": null,
         "reference": "guide du joueur, p81",
         "type": "pouvoir mystique",
         "tags": [
-            "pouvoir mystique"
+            "pouvoir mystique", "nécromanciens uniquement"
         ]
     },
     {
         "name": "Glyphe d'épuisement",
         "id": "pouvoir_mystique_glyphe_d_epuisement",
         "description": [
-            "",
-            "",
-            "",
-            ""
+            "Matériel : Un glyphe finement ouvragé. Le Mystique créé un glyphe qui, une fois activé, se transforme en un vortex mortel, consumant l’énergie vitale de l’ennemi. L’effet affecte tous les ennemis qui sont en mesure de voir le symbole et se trouvent devant lui.",
+            "Active. En réussissant un test de [Volonté ← Force], le Mystique peut blesser chaque ennemi des environs (un test par cible). Les dégâts sont de 1D4, ignorant l’Armure. Les effets durent jusqu’à ce que le Mystique rate un test de Volonté ou perde sa concentration en échouant à un test de [Volonté ← Dégâts].",
+            "Active. Similaire au niveau Novice, mais les effets subsistent jusqu’à ce que le Mystique rate un test de Volonté.",
+            "Active. Le Maître peut rediriger une portion de l’énergie absorbée vers lui-même ou l’un de ses alliés ; l’énergie vitale ainsi dérobée soigne le Mystique ou son allié d’1D4 points d’Endurance par tour aussi longtemps que l’effet reste actif."
         ],
         "effect": null,
         "reference": "guide du joueur, p82",
         "type": "pouvoir mystique",
         "tags": [
-            "pouvoir mystique"
+            "pouvoir mystique", "symbolisme"
         ]
     },
     {
         "name": "Hymne d'affaiblissement",
         "id": "pouvoir_mystique_hymne_d_affaiblissement",
         "description": [
-            "",
-            "",
-            "",
-            ""
+            "Matériel : Aucun, le Mystique doit chanter à voix haute. À travers l'histoire, nombreux sont les chants moqueurs ayant été composés au sujet des plus faibles et, dans ces mélodies, se cachent des harmonies affaiblissantes susceptibles d'être exploitées par les Mystiques qui savent comment s'y prendre. Le Mystique entonne cet air entêtant de façon répétitive durant un combat, propageant ainsi lâcheté et faiblesse au sein des rangs ennemis.\nLe chant est interrompu si le Mystique utilise un autre Pouvoir mystique ou s’il perd sa concentration en échouant à un test de [Volonté ← Dégâts].",
+            "Gratuite. En réussissant un test de [Persuasion ← Volonté], le Mystique peut imposer à chaque ennemi blessé une deuxième chance de rater tous leurs tests aussi longtemps que le chant continue ; un test est requis pour chaque ennemi blessé.",
+            "Gratuite. En réussissant un test de [Persuasion ← Volonté], le Mystique peut imposer à chaque ennemi (blessé ou non) une deuxièmechance de rater tous leurs tests aussi longtemps que le chant continue.",
+            "Gratuite. En réussissant un test de [Persuasion ←Volonté], le Mystique peut imposer à chaque ennemi (blessé ou non) une deuxième chance de rater tous leurs tests. En outre, tous les ennemis qui ratent un test à cause de l’Hymne d’affaiblissement subissent 1D4 points de dégâts, ignorant l’Armure— dus à la douleur physique entraînée par les paroles déchirantes évoquant leurs échecs passés."
         ],
         "effect": null,
         "reference": "guide du joueur, p82",
         "type": "pouvoir mystique",
         "tags": [
-            "pouvoir mystique"
+            "pouvoir mystique", "chant des trolls"
         ]
     },
     {

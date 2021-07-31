@@ -1,0 +1,101 @@
+[
+	{
+		"id": "arme_dague",
+		"nom": "dague",
+		"degats": "1d6",
+		"type": "arme",
+		"qualites": ["arme_courte"],
+		"fluff": "Une courte lame.",
+		"tags": ["arme", "courte", "une main"]
+	},
+	{
+		"id": "armure_robe_de_sorciere",
+		"type": "armure",
+		"nom": "robe de sorcière",
+		"qualites": ["armure_pratique"],
+		"protection": "1d4",
+		"fluff": "Les sorcières lient des esprits protecteurs à des fragments d’os et au crâne de leurs ennemis morts. Elles cousent ensuite tout cela à leurs vêtements pour bénéficier de leur protection.",
+		"tags": ["armure", "pratique", "légère", "sorcière"]
+	},
+	{
+		"id": "armure_naturelle_1",
+		"type": "armure",
+		"nom": "armure naturelle (I)",
+		"qualites": [],
+		"protection": "1d4",
+		"fluff": "La protection naturelle d'un animal sauvage.",
+		"tags": ["armure", "naturel", "animal", "légère"]
+	},
+	{
+		"id": "armure_naturelle_2",
+		"type": "armure",
+		"nom": "armure naturelle (II)",
+		"qualites": [],
+		"protection": "1d6",
+		"fluff": "La protection naturelle d'un animal sauvage.",
+		"tags": ["armure", "naturel", "animal", "moyenne"]
+	},
+	{
+		"id": "armure_naturelle_3",
+		"type": "armure",
+		"nom": "armure naturelle (III)",
+		"qualites": [],
+		"protection": "1d8",
+		"fluff": "La protection naturelle d'un animal sauvage.",
+		"tags": ["armure", "naturel", "animal", "lourde"]
+	},
+	{
+		"id": "mains_nues",
+		"nom": "mains nues",
+		"type": "arme",
+		"qualites": ["arme_courte"],
+		"degats": "1d4",
+		"fluff": "Un bon coup de poing.",
+		"tags": ["arme", "courte"]
+	},
+	{
+		"id": "arme_naturelle_1",
+		"nom": "arme naturelle (I)",
+		"type": "arme",
+		"qualites": [],
+		"degats": "1d6",
+		"fluff": "L'arme naturelle d'un animal sauvage, griffes, dents, defenses...",
+		"tags": ["arme", "naturel", "animal"]
+	},
+	{
+		"id": "arme_naturelle_2",
+		"nom": "arme naturelle (II)",
+		"type": "arme",
+		"qualites": [],
+		"degats": "1d8",
+		"fluff": "L'arme naturelle d'un animal sauvage, griffes, dents, defenses...",
+		"tags": ["arme", "naturel", "animal"]
+	},
+	{
+		"id": "arme_naturelle_3",
+		"nom": "arme naturelle (III)",
+		"type": "arme",
+		"qualites": ["arme_longue"],
+		"degats": "1d10",
+		"fluff": "L'arme naturelle d'un animal sauvage, griffes, dents, defenses...",
+		"tags": ["arme", "naturel", "animal", "longue"]
+	},
+	{
+		"id": "arme_epee",
+		"nom": "epée",
+		"type": "arme",
+		"degat": "1d8",
+		"qualites": [],
+		"fluff": "Une epée à une main.",
+		"tags": ["arme", "une main"]
+	},
+	{
+		"id": "armure_tablier_de_cuir",
+		"type": "armure",
+		"nom": "tablier de cuir",
+		"qualites": ["armure_genante_1"],
+		"protection": "1d4",
+		"fluff": "Une armure de cuir bouilli.",
+		"tags": ["armure", "légère", "gênante"]
+	}
+]

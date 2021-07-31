@@ -1,0 +1,351 @@
+[
+	{
+		"name": "Magdala",
+		"id": "magdala_fred",
+		"joueur": "Fred",
+		"race": "Humain (Barbare)",
+		"occupation": "Sorcière",
+		"ombre": "Rouge avec des taches de rouille",
+		"experience": 50,
+		"experience_rest": 0,
+		"phrase_type": "Telle est la volonté des esprits.",
+		"seuil_douleur": 6,
+		"endurance": 11,
+		"endurance_max": 11,
+		"seuil_corruption": 8,
+		"corruption_temporaire": 0,
+		"corruption_permanente": 1,
+		"precision": 10,
+		"astuce": 9,
+		"discretion": 7,
+		"persuasion": 5,
+		"agilite": 13,
+		"volonte": 15,
+		"force": 11,
+		"vigilance": 10,
+		"aptitudes": [
+			{
+				"id": "talent_sorcellerie",
+				"niveau": 1
+			},
+			{
+				"id": "pouvoir_mystique_metamorphose",
+				"niveau": 2
+			},
+			{
+				"id": "talent_guerrier_ne",
+				"niveau": 1
+			},
+			{
+				"id": "trait_art_de_la_survie"
+			}
+		],
+		"equipement": [
+			{
+				"id": "arme_dague"
+			},
+			{
+				"id": "armure_robe_de_sorciere"
+			},
+			{
+				"id": "armure_peau"
+			},
+			{
+				"id": "arme_griffes"
+			},
+			{
+				"free": "Couverture / ustensiles cuisine et feu"
+			}			
+		],
+		"armes": [
+			{
+				"arme_id": "arme_dague"
+			},
+			{
+				"arme_id": "arme_griffes"
+			}
+		],
+		"defences": [
+			{
+				"armure_id": "armure_robe_de_sorciere"
+			},
+			{
+				"armure_id": "armure_peau"
+			}
+		],
+		"or": 270,
+		"age": null,
+		"taille": null,
+		"poids": null,
+		"image": null,
+		"apparence": null,
+		"historique": null,
+		"objectifs": null,
+		"artefacts": []
+	},
+	{
+		"name": "Ragéor",
+		"id": "rageor_christophe",
+		"joueur": "Christophe",
+		"race": "Ogre",
+		"occupation": "Berserker",
+		"ombre": "Vert sombre comme la mousse",
+		"experience": 50,
+		"experience_rest": 0,
+		"phrase_type": "M’énerve pas.",
+		"seuil_douleur": 8,
+		"endurance": 15,
+		"endurance_max": 15,
+		"seuil_corruption": 7,
+		"corruption_temporaire": 0,
+		"corruption_permanente": 0,
+		"precision": 10,
+		"astuce": 9,
+		"discretion": 5,
+		"persuasion": 7,
+		"agilite": 11,
+		"volonte": 13,
+		"force": 15,
+		"vigilance": 10,
+		"aptitudes": [
+			{
+				"id": "trait_vigoureux",
+				"niveau": 1
+			},
+			{
+				"id": "talent_berserker",
+				"niveau": 1
+			},
+			{
+				"id": "talent_double_attaque",
+				"niveau": 2
+			},
+			{
+				"id": "trait_longevite"
+			},
+			{
+				"id": "fardeau_paria"
+			}
+		],
+		"equipement": [
+			{
+				"id": "arme_epee"
+			},
+			{
+				"id": "arme_epee"
+			},
+			{
+				"id": "arme_dague"
+			},
+			{
+				"id": "armure_tablier_de_cuir"
+			},
+			{
+				"free": "Flute"
+			},
+			{
+				"free": "Couverture / ustensiles cuisine et feu"
+			}			
+		],
+		"armes": [
+			{
+				"arme_id": "arme_epee"
+			},
+			{
+				"arme_id": "arme_dague"
+			}
+		],
+		"defences": [
+			{
+				"armure_id": "armure_tablier_de_cuir"
+			}
+		],
+		"or": 54,
+		"age": null,
+		"taille": null,
+		"poids": null,
+		"image": null,
+		"apparence": null,
+		"historique": null,
+		"objectifs": null,
+		"artefacts": []
+	},
+	{
+		"name": "Test char",
+		"id": "test_char_mj",
+		"joueur": "MJ",
+		"race": "Ogre",
+		"occupation": "Berserker",
+		"ombre": "Vert sombre comme la mousse",
+		"experience": 50,
+		"experience_rest": 0,
+		"phrase_type": "M’énerve pas.",
+		"seuil_douleur": 8,
+		"endurance": 15,
+		"endurance_max": 15,
+		"seuil_corruption": 7,
+		"corruption_temporaire": 0,
+		"corruption_permanente": 0,
+		"precision": 10,
+		"astuce": 9,
+		"discretion": 5,
+		"persuasion": 7,
+		"agilite": 11,
+		"volonte": 13,
+		"force": 15,
+		"vigilance": 10,
+		"aptitudes": [
+			{
+				"id": "trait_vigoureux",
+				"niveau": 1
+			},
+			{
+				"id": "talent_berserker",
+				"niveau": 1
+			},
+			{
+				"id": "talent_double_attaque",
+				"niveau": 2
+			},
+			{
+				"id": "trait_longevite"
+			},
+			{
+				"id": "fardeau_paria"
+			},
+			{
+				"id": "fardeau_paria"
+			},
+			{
+				"id": "trait_vigoureux",
+				"niveau": 1
+			},
+			{
+				"id": "talent_berserker",
+				"niveau": 1
+			},
+			{
+				"id": "talent_double_attaque",
+				"niveau": 2
+			},
+			{
+				"id": "trait_longevite"
+			},
+			{
+				"id": "fardeau_paria"
+			},
+			{
+				"id": "fardeau_paria"
+			}
+		],
+		"equipement": [
+			{
+				"free": "Item 1"
+			},
+			{
+				"free": "Item 2"
+			},
+			{
+				"free": "Item 3"
+			},
+			{
+				"free": "Item 4"
+			},
+			{
+				"free": "Item 5"
+			},
+			{
+				"free": "Item 6"
+			},
+			{
+				"free": "Item 7"
+			},
+			{
+				"free": "Item 8"
+			},
+			{
+				"free": "Item 9"
+			},
+			{
+				"free": "Item 10"
+			},
+			{
+				"free": "Item 11"
+			},
+			{
+				"free": "Item 12"
+			},
+			{
+				"free": "Item 13"
+			},
+			{
+				"free": "Item 14"
+			},
+			{
+				"free": "Item 15"
+			},
+			{
+				"free": "Item 16"
+			},
+			{
+				"free": "Item 17"
+			},
+			{
+				"free": "Item 18"
+			},
+			{
+				"free": "Item 19"
+			},
+			{
+				"free": "Item 20"
+			},
+			{
+				"free": "Item 21"
+			}
+		],
+		"armes": [
+			{
+				"arme_id": "arme_epee"
+			},
+			{
+				"arme_id": "arme_dague"
+			},
+			{
+				"arme_id": "arme_epee"
+			},
+			{
+				"arme_id": "arme_dague"
+			}
+		],
+		"defences": [
+			{
+				"armure_id": "armure_tablier_de_cuir"
+			},
+			{
+				"armure_id": "armure_robe_de_sorciere"
+			}
+		],
+		"or": 123,
+		"age": "32",
+		"taille": "180cm",
+		"poids": "60 kilos",
+		"image": "/images/test_char.jpg",
+		"apparence": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec.",
+		"historique": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec. uspendisse lectus tortor.",
+		"objectifs": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.",
+		"artefacts": [
+			{
+				"id": "arme_epee"
+			},
+			{
+				"id": "arme_dague"
+			},
+			{
+				"id": "arme_epee"
+			},
+			{
+				"id": "arme_dague"
+			}
+		]
+	}		
+]

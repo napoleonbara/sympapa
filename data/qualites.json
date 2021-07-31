@@ -1,0 +1,38 @@
+[
+	{
+		"id": "arme_courte",
+		"nom": "courte",
+		"fluff": "L’arme est facile à ranger, elle peut être dégainée sur une Action gratuite et elle peut être utilisée avec les Talents Feinte et Coup en traître.",
+		"tags": ["arme"]
+	},
+	{
+		"id": "armure_pratique",
+		"nom": "pratique",
+		"fluff": "L’armure est étonnamment pratique et bien moins Gênante que ce que sa capacité de protection le laisse supposer. Pour cette raison, une armure légère Pratique ne confère aucun malus sur les jets de Défense, de Discrétion et d’utilisation de pouvoirs mystiques. Une armure moyenne Pratique a un malus de (-1) et une armure lourde Pratique, un malus de (-2). Un bouclier Pratique peut être attaché au bras, prêt à l’emploi, tout en laissant son porteur libre d’utiliser ses deux mains pour manier une arme Longue ou Lourde. De même, les armes à distance peuvent aussi être utilisées sans problèmes avec un bouclier Pratique. ",
+		"tags": ["armure"]
+	},
+	{
+		"id": "arme_longue",
+		"nom": "longue",
+		"fluff": "L’arme a l’avantage d’être plus longue et d’avoir une meilleure portée. Cela offre à son porteur une Attaque gratuite à chaque tour contre un nouvel adversaire au corps à corps à condition qu’il ne manie pas lui aussi une arme Longue. ",
+		"tags": ["arme"]
+	},
+	{
+		"id": "armure_genante_1",
+		"nom": "gênante (1)",
+		"fluff": "L’armure ralentit n’importe quel mouvement requérant de l’agilité et inflige un malus sur tous les tests de Défense, de discrétion, et lors de l’utilisation de pouvoirs mystiques. Ce malus dépend de la catégorie de l’armure. L'armure légère donne un malus est de (-2).",
+		"tags": ["armure"]
+	},
+	{
+		"id": "armure_genante_2",
+		"nom": "gênante (2)",
+		"fluff": "L’armure ralentit n’importe quel mouvement requérant de l’agilité et inflige un malus sur tous les tests de Défense, de discrétion, et lors de l’utilisation de pouvoirs mystiques. Ce malus dépend de la catégorie de l’armure. L'armure moyenne donne un malus est de (-3).",
+		"tags": ["armure"]
+	},
+	{
+		"id": "armure_genante_3",
+		"nom": "gênante (3)",
+		"fluff": "L’armure ralentit n’importe quel mouvement requérant de l’agilité et inflige un malus sur tous les tests de Défense, de discrétion, et lors de l’utilisation de pouvoirs mystiques. Ce malus dépend de la catégorie de l’armure. L'armure lourde donne un malus est de (-4).",
+		"tags": ["armure"]
+	}
+]
