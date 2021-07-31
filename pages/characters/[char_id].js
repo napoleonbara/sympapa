@@ -1,6 +1,8 @@
 import Layout from '../../components/Layout'
 import Custom404 from '../404'
 import Image from 'next/image'
+import sheet1 from '../../public/images/fiche1.png'
+import sheet2 from '../../public/images/fiche2.png'
 
 import 'tailwindcss/tailwind.css'
 
@@ -36,7 +38,7 @@ export default function Aptitudes({char_id, character}) {
   return (
     <Layout>
       <div className="relative">
-        <Image src="/images/fiche1.png" alt="base fiche de perso"/>
+        <Image src={sheet1} alt="base fiche de perso" width="872" height="1235" objectFit='contain'/>
         <div className="absolute top-line-1 left-col-1">{character.joueur}</div>
       	<div className="absolute top-line-2 left-col-1">{character.name}</div>
         <div className="absolute top-line-3 left-col-1">{character.race}</div>
@@ -96,7 +98,7 @@ export default function Aptitudes({char_id, character}) {
         </div>        
       </div>
       <div className="relative">
-        <Image src="/images/fiche2.png" alt="base fiche de perso"/>
+        <Image src={sheet2} alt="base fiche de perso" width="872" height="1235"/>
         <div>
           {
             character.equipement.map((a, i) => {
@@ -116,7 +118,7 @@ export default function Aptitudes({char_id, character}) {
         <div className="absolute top-y-poids left-x-poids">{character.poids}</div>
         <div className="absolute top-y-image left-x-image">
           {
-            character.image && <Image src={character.image} alt={`Image pour ${character.name}`}></Image>
+            character.image && <Image src={character.image} alt={`Image pour ${character.name}`} width="100" height="200"></Image>
           }
         </div>
         <div className="absolute top-y-apparence left-x-apparence w-64">{character.apparence}</div>
