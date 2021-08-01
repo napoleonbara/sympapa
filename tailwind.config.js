@@ -35,49 +35,6 @@ module.exports = {
       'x-force': "666px",
       'x-vigilance': "758px",
 
-      "aptitude-col-1": "32px",
-      "aptitude-col-2": "304px",
-      "aptitude-col-3": "556px",
-
-      "aptitude-line-1": "336px",
-      "aptitude-line-2": "478px",
-      "aptitude-line-3": "613px",
-      "aptitude-line-4": "749px",
-
-      "arme-col": "90px",
-      "arme-line-1": "947px",
-      "arme-line-2": "987px",
-      "arme-line-3": "1027px",
-      "arme-line-4": "1067px",
-
-      "armure-col-1": "565px",
-      "armure-col-2": "692px",
-      "armure-line": "948px",
-
-
-      "equip-col": "576px",
-      "equip-line-1": "100px",
-      "equip-line-2": "142px",
-      "equip-line-3": "184px",
-      "equip-line-4": "228px",
-      "equip-line-5": "270px",
-      "equip-line-6": "312px",
-      "equip-line-7": "354px",
-      "equip-line-8": "396px",
-      "equip-line-9": "438px",
-      "equip-line-10": "482px",
-      "equip-line-11": "526px",
-      "equip-line-12": "570px",
-      "equip-line-13": "612px",
-      "equip-line-14": "654px",
-      "equip-line-15": "696px",
-      "equip-line-16": "738px",
-      "equip-line-17": "780px",
-      "equip-line-18": "822px",
-      "equip-line-19": "864px",
-      "equip-line-20": "906px",
-      "equip-line-21": "948px",
-
       "x-thalers": "584px",
       "y-thalers": "993px",
 
@@ -107,12 +64,6 @@ module.exports = {
 
       "x-objectifs": "61px",
       "y-objectifs": "339px",
-
-      "artefact-line-1": "837px",
-      "artefact-line-2": "900px",
-      "artefact-line-3": "986px",
-      "artefact-line-4": "1073px",
-      "artefact-col": "61px"
     }
   },
   variants: {

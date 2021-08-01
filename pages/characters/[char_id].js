@@ -70,7 +70,7 @@ export default function Aptitudes({char_id, character}) {
             character.aptitudes.map((a, i) => {
               let col = i % 3 + 1;
               let line = Math.floor(i / 3) + 1; 
-              return <div className={`absolute top-aptitude-line-${line} left-aptitude-col-${col}`} key={i}>
+              return <div className={`absolute aptitude-line-${line} aptitude-col-${col}`} key={i}>
                 {a.id}
               </div>
             })
@@ -80,7 +80,7 @@ export default function Aptitudes({char_id, character}) {
         <div>
           {
             character.armes.map((a,i) => {
-              return <div className={`absolute left-arme-col top-arme-line-${i+1}`} key={i}>
+              return <div className={`absolute arme-col arme-line-${i+1}`} key={i}>
                 {a.arme_id}
               </div>
             })
@@ -90,7 +90,7 @@ export default function Aptitudes({char_id, character}) {
         <div>
           {
             character.defences.map((a,i) => {
-              return <div className={`absolute left-armure-col-${i+1} top-armure-line`} key={i}>
+              return <div className={`absolute armure-col-${i+1} armure-line`} key={i}>
                 {a.armure_id}
               </div>
             })
@@ -102,7 +102,7 @@ export default function Aptitudes({char_id, character}) {
         <div>
           {
             character.equipement.map((a, i) => {
-              return <div className={`absolute top-equip-line-${i+1} left-equip-col`} key={i}>
+              return <div className={`absolute equip-line-${i+1} equip-col`} key={i}>
                 {a.id || a.free}
               </div>
             })
@@ -127,7 +127,7 @@ export default function Aptitudes({char_id, character}) {
         <div>
           {
             character.artefacts.map((a, i) => {
-              return <div className={`absolute top-artefact-line-${i+1} left-artefact-col`} key={i}>
+              return <div className={`absolute artefact-line-${i+1} artefact-col`} key={i}>
                 {a.id}
               </div>
             })
