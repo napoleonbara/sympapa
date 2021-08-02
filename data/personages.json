@@ -48,12 +48,6 @@
 				"id": "armure_robe_de_sorciere"
 			},
 			{
-				"id": "armure_peau"
-			},
-			{
-				"id": "arme_griffes"
-			},
-			{
 				"free": "Couverture / ustensiles cuisine et feu"
 			}			
 		],
@@ -62,15 +56,17 @@
 				"arme_id": "arme_dague"
 			},
 			{
-				"arme_id": "arme_griffes"
+				"arme_id": "arme_naturelle_2"
 			}
 		],
 		"defences": [
 			{
-				"armure_id": "armure_robe_de_sorciere"
+				"armure_id": "armure_robe_de_sorciere",
+				"defense": 13
 			},
 			{
-				"armure_id": "armure_peau"
+				"armure_id": "armure_naturelle_1",
+				"defense": 13
 			}
 		],
 		"or": 270,
@@ -157,7 +153,8 @@
 		],
 		"defences": [
 			{
-				"armure_id": "armure_tablier_de_cuir"
+				"armure_id": "armure_tablier_de_cuir",
+				"defense": 8
 			}
 		],
 		"or": 54,
@@ -187,55 +184,91 @@
 		"corruption_temporaire": 0,
 		"corruption_permanente": 0,
 		"precision": 10,
-		"astuce": 9,
-		"discretion": 5,
-		"persuasion": 7,
-		"agilite": 11,
+		"astuce": 19,
+		"discretion": 11,
+		"persuasion": 17,
+		"agilite": 8,
 		"volonte": 13,
 		"force": 15,
 		"vigilance": 10,
 		"aptitudes": [
 			{
 				"id": "trait_vigoureux",
-				"niveau": 1
+				"niveau": 1,
+				"name": "Berserker",
+				"effet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignis.",
+				"type": "talent"
 			},
 			{
 				"id": "talent_berserker",
-				"niveau": 1
+				"niveau": 1,
+				"name": "Berserker",
+				"effet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignis.",
+				"type": "talent"
 			},
 			{
 				"id": "talent_double_attaque",
-				"niveau": 2
+				"niveau": 2,
+				"name": "Double attaque",
+				"effet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignis.",
+				"type": "talent"
 			},
 			{
-				"id": "trait_longevite"
+				"id": "trait_longevite",
+				"name": "Longevite",
+				"effet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignis.",
+				"type": "trait"
 			},
 			{
-				"id": "fardeau_paria"
+				"id": "fardeau_paria",
+				"name": "Paria",
+				"effet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignis.",
+				"type": "fardeau"
 			},
 			{
-				"id": "fardeau_paria"
+				"id": "fardeau_paria",
+				"name": "Paria",
+				"effet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignis.",
+				"type": "fardeau"
 			},
 			{
 				"id": "trait_vigoureux",
-				"niveau": 1
+				"niveau": 3,
+				"name": "Vigoureux",
+				"effet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignis.",
+				"type": "trait"
 			},
 			{
 				"id": "talent_berserker",
-				"niveau": 1
+				"niveau": 1,
+				"name": "Berserker",
+				"effet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignis.",
+				"type": "talent"
 			},
 			{
 				"id": "talent_double_attaque",
-				"niveau": 2
+				"niveau": 2,
+				"name": "Double attaque",
+				"effet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignis.",
+				"type": "talent"
 			},
 			{
-				"id": "trait_longevite"
+				"id": "trait_longevite",
+				"name": "Longevite",
+				"effet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignis.",
+				"type": "trait"
 			},
 			{
-				"id": "fardeau_paria"
+				"id": "fardeau_paria",
+				"name": "Paria",
+				"effet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignis.",
+				"type": "fardeau"
 			},
 			{
-				"id": "fardeau_paria"
+				"id": "fardeau_paria",
+				"name": "Paria",
+				"effet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignis.",
+				"type": "fardeau"
 			}
 		],
 		"equipement": [
@@ -305,24 +338,48 @@
 		],
 		"armes": [
 			{
-				"arme_id": "arme_epee"
+				"arme_id": "arme_epee",
+				"nom": "epee",
+				"degats": "1d8",
+				"qualite": [],
+				"attribut": "precision"
 			},
 			{
-				"arme_id": "arme_dague"
+				"arme_id": "arme_dague",
+				"nom": "dague",
+				"degats": "1d6",
+				"qualite": ["courte"],
+				"attribut": "precision"
 			},
 			{
-				"arme_id": "arme_epee"
+				"arme_id": "arme_epee",
+				"nom": "epee",
+				"degats": "1d8",
+				"qualite": [],
+				"attribut": "precision"
 			},
 			{
-				"arme_id": "arme_dague"
+				"arme_id": "arme_dague",
+				"nom": "dague",
+				"degats": "1d6",
+				"qualite": ["courte"],
+				"attribut": "precision"
 			}
 		],
 		"defences": [
 			{
-				"armure_id": "armure_tablier_de_cuir"
+				"armure_id": "armure_robe_de_sorciere",
+				"nom": "Robe de sorciere",
+				"protection": "1d4",
+				"qualite": "pratique",
+				"defense": "13"
 			},
 			{
-				"armure_id": "armure_robe_de_sorciere"
+				"armure_id": "armure_peau",
+				"nom": "Armure naturelle (I)",
+				"protection": "1d4",
+				"qualite": "pratique",
+				"defense": "13"
 			}
 		],
 		"or": 123,

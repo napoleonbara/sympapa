@@ -10,8 +10,10 @@ export async function getServerSideProps({ query, req, res }) {
   const data = await fetch(`http://${req.headers.host}/api/characters`);
   let characters = await data.json();
 
+    console.log(characters)
+
   if(!query.hasOwnProperty('mj') || query.mj !== "true"){
-    characters = characters.filter(e => e.joueur !== "mj");
+    characters = characters.filter(e => e.joueur.toUpperCase() !== "MJ");
   }
 
   return { props: { characters } }

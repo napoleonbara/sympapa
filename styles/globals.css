@@ -124,39 +124,39 @@ header {
 	top: 336px;
 }
 .aptitude-line-2 {
-	top: 478px;
+	top: 474px;
 }
 .aptitude-line-3 {
-	top: 613px;
+	top: 609px;
 }
 .aptitude-line-4 {
 	top: 749px;
 }
 
 .aptitude-col-1 {
-	left: 32px;
+	left: 46px;
 }
 .aptitude-col-2 {
 	left: 304px;
 }
 .aptitude-col-3 {
-	left: 556px;
+	left: 560px;
 }
 
 .arme-col {
-	left:  90px;
+	left:  56px;
 }
 .arme-line-1 {
-	top: 947px;
+	top: 960px;
 }
 .arme-line-2 {
-	top: 987px;
+	top: 1000px;
 }
 .arme-line-3 {
-	top: 1027px;
+	top: 1040px;
 }
 .arme-line-4 {
-	top: 1067px;
+	top: 1080px;
 }
 
 .armure-col-1 {
@@ -253,3 +253,81 @@ header {
 .artefact-col {
 	left: 61px;
 }
+
+.center-me {
+	@apply transform;
+	@apply -translate-x-1/2;
+	@apply -translate-y-1/2;
+}
+
+
+.defense {
+	width:  120px;
+}
+
+.defense .name {
+	@apply absolute;
+}
+.defense .protection {
+	@apply absolute;
+	top: 50px;
+}
+.defense .qualite {
+	@apply absolute;
+	top: 100px;
+}
+.defense .score {
+	@apply absolute;
+	@apply text-2xl;
+	@apply center-me;
+	top: 169px;
+	left: 57px;
+}
+
+
+.arme .name{
+	@apply absolute;
+	left: 0px;
+	width: 223px;
+}
+.arme .degats{
+	@apply absolute;
+	left: 226px;
+}
+.arme .qualite{
+	@apply absolute;
+	left: 270px;
+}
+.arme .attribut{
+	@apply absolute;
+	left: 425px;
+}
+
+
+.char-sheet .aptitude {
+	width:  256px;
+}
+
+.aptitude .name {
+	@apply absolute;
+	top: 5px;
+	left: 27px;
+}
+.aptitude .effet{
+	@apply absolute;
+	@apply overflow-y-hidden;
+	height: 76px;
+	top: 43px;
+	left: 1px;
+}
+.aptitude .type{
+	@apply absolute;
+	top: 119px;
+	left: 28px;
+}
+.aptitude .niveau{
+	@apply absolute;
+	top: 110px;
+	left: 198px;
+}
+

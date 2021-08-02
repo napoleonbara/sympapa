@@ -3,5 +3,5 @@
 import json_fetch from '../../utils/json_fetch';
 
 export default async function handler(req, res) {
-  json_fetch(req, res, "./data/personages.json");
+  json_fetch(req, res, "./data/qualites.json");
 }
