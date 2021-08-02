@@ -1,0 +1,1 @@
+// /setpool [nom de skill, -/+/=nombre]

@@ -1,0 +1,1 @@
+// /setskill, POST to http://alfred-robertbruce.rhcloud.com/setskill. // /setpool [nom de skill, -/+/=nombre]
