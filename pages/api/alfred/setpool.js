@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-import { readFile, writefile } from 'fs/promises';
+import { readFile, writeFile } from 'fs/promises';
 
 function formatString(str){
   return str.trim()
@@ -15,38 +15,71 @@ function capitalize(str){
 
 const file_name = "./data/chtulhu_chars.json"
 
+function set(command, {pool, skill}){
+  let value = Number(command.slice(1));
+  return {pool: value, skill};
+}
+
+function add(command, {pool, skill}){
+  let value = Number(command.slice(1));
+  return {pool: value + pool > skill ? skill : value + pool, skill};
+}
+
+function sub(command, {pool, skill}){
+  let value = Number(command.slice(1));
+  return {pool: pool - value, skill};
+}
+
+function max(command, {pool, skill}){
+  return {pool: skill, skill};
+}
+
 export default async function handler(req, res) {
   const {user_name, text} = req.query;
-  let original_skill_name, points, original_name;
+  let original_skill_name, original_command, original_name;
+  let skill_name, command, name;
+  let skill;
 
   try {
+    [original_skill_name, original_command, original_name] = text.split(',');
+    if(!original_name) original_name = user_name.replace('_', ' ');
+    if(!original_command) throw new Error("no command");
+
+    [skill_name, command, name] = [original_skill_name, original_command, original_name].map(formatString);
+
+    let op;
+    if ( command[0] === '=' ) {
+        op = set;
+    } else if  ( command[0] === '-' ) {
+        op = sub;
+    } else if  ( command[0] === '+' ) {
+        op = add;
+    } else if  ( command === 'max' ) {
+        op = max;
+    } else {
+      throw new Error("no command");
+    }
+
     const content = await readFile(file_name, {encoding: 'utf-8'});
     const data = JSON.parse(content);
-
-    [original_skill_name, points, original_name] = text.split(',');
-    if(!original_name) original_name = user_name.replace('_', ' ');
-
-    [original_skill_name, points, original_name] = [original_skill_name, points, original_name].map(s => s.trim());
-    const [skill_name, name] = [original_skill_name, original_name].map(formatString);
-    points = Number(points);
 
     const char = data.find(c => c.name.match(RegExp(name)));
     if(!char) throw new Error("char not found");
 
-    const skill = char[skill_name];
+    skill = char[skill_name];
     if(!skill) throw new Error("skill not found");
 
-    if(skill.pool < points && skill_name!="sanity") throw new Error("not enough points");
+    let new_skill = op(command, skill);
+    if(new_skill.pool < 0 && skill_name !== 'stability') throw new Error("negative points");
+    if(new_skill.pool > new_skill.skill) throw new Error("override");
 
-    skill.pool -= points;
+    char[skill_name] = new_skill;
 
     await writeFile(file_name, JSON.stringify(data, null, 4), {encoding: 'utf-8'});
 
-    const roll = d6();
-
     res.status(200).json({
       response_type: "in_channel",
-      text: `Rolled ${capitalize(skill_name)}: ${roll} + ${points} -> ${roll+points}`
+      text: `${capitalize(skill_name)} mis à ${new_skill.pool}/${new_skill.skill}`
     });
 
   } catch(err) {
@@ -63,10 +96,16 @@ export default async function handler(req, res) {
           text: `Erreur: skill "${original_skill_name}" introuvable... thoughts?`
         });
         break;
-      case "not enough points":
+      case "negative points":
         res.status(200).json({
           response_type: "in_channel",
-          text: `Erreur: pas assez de points... thoughts?`
+          text: `Erreur: ${capitalize(skill_name)} ne peut pas etre négatif...`
+        });
+        break;
+      case "override":
+        res.status(200).json({
+          response_type: "in_channel",
+          text: `Erreur: le maximum pour ${capitalize(skill_name)} est ${skill.skill}...`
         });
         break;
       default:

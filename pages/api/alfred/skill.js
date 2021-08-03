@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-import { readFile } from 'fs/promises';
+const { readFile } = require('fs/promises');
 
 function formatString(str){
   return str.trim()
