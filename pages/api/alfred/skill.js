@@ -22,8 +22,10 @@ export default async function handler(req, res) {
   try {
     const content = await readFile(file_name, {encoding: 'utf-8'});
     const data = JSON.parse(content);
+
     [original_skill_name, original_name] = text.split(',');
     if(!original_name) original_name = user_name.replace('_', ' ');
+    
     [original_skill_name, original_name] = [original_skill_name, original_name].map(s => s.trim());
     const [skill_name, name] = [original_skill_name, original_name].map(formatString);
 
@@ -41,19 +43,19 @@ export default async function handler(req, res) {
   } catch(err) {
     switch(err.message) {
       case "char not found":
-        res.status(404).json({
+        res.status(200).json({
           response_type: "in_channel",
           text: `Erreur: personnage "${original_name}" introuvable... thoughts?`
         });
         break;
       case "skill not found":
-        res.status(404).json({
+        res.status(200).json({
           response_type: "in_channel",
           text: `Erreur: skill "${original_skill_name}" introuvable... thoughts?`
         });
         break;
       default:
-        res.status(500).json({
+        res.status(200).json({
           response_type: "in_channel",
           text: `Erreur serveur: ${err.message}`
         });
